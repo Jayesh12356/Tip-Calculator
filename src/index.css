@@ -1,0 +1,104 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+span {
+  display: block;
+  margin-bottom: 8px;
+  color: #d1d1d1;
+  font-weight: 500;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+input[type="text"]::placeholder {
+  color: #b0b0b0;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #ffffff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: rgba(255, 255, 255, 0.1)
+    url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>')
+    no-repeat right 10px center;
+  color: #ffffff;
+}
+
+select option {
+  background: #333;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+}
+
+button:focus {
+  outline: none;
+}
